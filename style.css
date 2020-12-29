@@ -4,6 +4,10 @@ body {
 	background: #080808 !important;
 }
 
+html {
+	background: #080808;
+}
+
 h1 {
 	font-size: 140%;
 }
