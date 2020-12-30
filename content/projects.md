@@ -1,6 +1,6 @@
 ## projects
 
-#### clengine
+#### cliw
 Clengine is a cli interface generator. It can be used for creation of games or tui tools.
 
 #### goblocks
