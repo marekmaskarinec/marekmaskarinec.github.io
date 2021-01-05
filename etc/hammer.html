@@ -1,0 +1,52 @@
+<html>
+	<head>
+		 <link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<h1><a class="header" href="../index.html">marek maskarinec</a> | <a class="header" href="../colors.html">color scheme</a> | <a class="header" href="../software.html">software i use</a> | <a class="header" href="../projects.html">projects</a> | <a class="header" href="../etc.html">etc</a></h1>
+		</div>
+		<div class="content">
+<h2>How to install hammer editor on linux</h2>
+
+<p>Although valve is known for good linux support, there are things, they didn&rsquo;t port yet like Alien Swarm or their SDK. A while back, I wanted to get back to making maps, but I don&rsquo;t dual boot windows anymore, so I had to come up with a way to install hammer on linux.
+Here I will show you, how I did it.
+Hammer actually comes with valve games, but only on windows. If we want to install it on linux there are two ways:
+1. download and install windows version of steam thru wine and then install a valve game
+2. download windows binaries for a valve game</p>
+
+<p>In this tutorial, I will show the second one.</p>
+
+<h3>prequisities</h3>
+
+<p>For this to work you will need:
+- steam
+- some valve game (recommend tf2 or cs:go)
+- wine and wine32
+- keyboard or another preferred way of input</p>
+
+<h3>step 1: download hammer</h3>
+
+<p>To download hammer, we will need to download windows binaried for a valve game (i will show it on tf2). We will use steam console to achieve this. To open steam console write <code>steam://console</code> into your browser.
+Then if you head to your steam client you will see console button on the right of your profile name. When you have the console open, you can use the <code>download_depot &lt;game_id&gt; &lt;depot_id&gt;</code> command to download depots.
+You can look up game id on <a href="steamdb.info">steamdb</a>. For tf2 it is <code>440</code> and we want to download the <code>TF2 Windows client</code> depot which has number <code>232253</code>. That means the following command will look like this: <code>download_depot 440 232253</code>.
+It will take a while to download</p>
+
+<h3>step 2: copying</h3>
+
+<p>When the download is finnished, the downloaded data will be in <code>~/.steam/steam/steamapps/content/app_&lt;game_id&gt;/depot_&lt;depot_id&gt;/</code>.
+To use this copy content of the depot folder to a game folder, commonly placed in <code>~/.local/share/Steam/steamapps/common/</code>.</p>
+
+<h3>step 3: running</h3>
+
+<p>After copying the files, we can finally launch hammer. It is located in <code>~/.local/share/Steam/steamapps/common/&lt;game_name&gt;/bin/hammer.exe</code>. We will use wine to launch it.
+It should start normally. If not the errors are usually easy to solve by just googling.</p>
+
+<h3>step 4: make maps</h3>
+
+<p>Thanks for reading this guide. Hope it works :]</p>
+
+		</div>
+	</body>
+</html>
+

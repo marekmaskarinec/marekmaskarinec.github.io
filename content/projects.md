@@ -5,7 +5,7 @@ A list of projects I'm working on/worked on with links to github.
 #### [cliw](https://github.com/marekmaskarinec/cliw)
 Cliw is a cli interface generator. It can be used for creation of games or tui tools.
 
-#### [clengine](https://github.com/marekmaskarinec/clengine
+#### [clengine](https://github.com/marekmaskarinec/clengine)
 Clengine is a game endgine built on top of cliw. Although it's still in development, it is fully functional. It handles game cycles with accessible delta, drawing and physics objects. It aims to make the code as simple as possible, while still giving user controll of the project.
 
 #### [goblocks](https://github.com/marekmaskarinec/goblocks)
