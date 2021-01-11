@@ -11,11 +11,7 @@ In this tutorial, I will show the second one.
 
 
 ### prequisities
-For this to work you will need:
-- steam
-- some valve game (recommend tf2 or cs:go)
-- wine and wine32
-- keyboard or another preferred way of input
+For this to work you will need: steam, some valve game (recommend tf2 or cs:go), wine and wine32.
 
 ### step 1: download hammer
 To download hammer, we will need to download windows binaried for a valve game (i will show it on tf2). We will use steam console to achieve this. To open steam console write `steam://console` into your browser.

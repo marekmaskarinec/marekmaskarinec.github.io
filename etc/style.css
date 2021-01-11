@@ -2,6 +2,7 @@ body {
 	font-family: "sans";
 	color: #FFFFEB;
 	background: #080808 !important;
+	font-size: 200%;
 }
 
 html {
@@ -18,7 +19,7 @@ a {
 }
 
 .content {
-	width: 40%;
+	/*width: 40%;*/
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 700px;
@@ -26,7 +27,7 @@ a {
 
 .header {
 	padding-top: 2%;
-	width: 50%;
+/*	width: 50%;*/
 	margin-left: auto;	
 	margin-right: auto;	
 	color: #ffffeb;
@@ -54,4 +55,15 @@ h2 {
 
 h3 {
 	color: #3ca370;
+}
+@media only screen and (min-width: 800px) {
+	.header {
+		width: 50%;
+	}
+	.content {
+		width: 40%;
+	}
+	body {
+		font-size: 100%;
+	}
 }
