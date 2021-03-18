@@ -22,8 +22,8 @@
 #### fish
 - no need to customize, since I like the default config
 
-#### firefox
-- not chrome, not webkit
+#### luakit
+- it's really good to navigate and it's lightweight
 
-#### micro
-- nano, but better
+#### vim
+- `:wq` makes a good smiley face. still not good as `:]`
