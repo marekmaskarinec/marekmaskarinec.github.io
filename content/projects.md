@@ -5,6 +5,9 @@ A list of projects I'm working on/worked on with links to github.
 #### [tophat](https://github.com/marekmaskarinec/tophat)
 A game engine made in C, but using [umka](https://github.com/vtereshkov/umka-lang) to make games. It still work in progress, but you can already make games with it. Just prepare to have no sound. It is currently my main project.
 
+#### [lishka](https://github.com/marekmaskarinec/lishka)
+A shell I'm trying to make, so it can replace fish's place as my main shell.
+
 #### [mdsite](https://github.com/marekmaskarinec/mdsite)
 Mdsite is minimalist static site generator written in go. It packs no useless stuff. It just parses markdown and inserts it into predefined html template. I want to make a qui frontend, so it's easier to use and a vim extension to generate sites straight from vim. It was also used to make this website
 

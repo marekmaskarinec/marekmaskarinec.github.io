@@ -1,8 +1,8 @@
 ## color scheme
 
-#### #080808
+#### #262626
 	- background color
-#### #FFFFEB
+#### #adadd5
 	- text color
-#### #3ca370
+#### #afaf87
 	- accent color
