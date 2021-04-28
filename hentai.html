@@ -1,0 +1,33 @@
+<html>
+	<head>
+		 <link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<h1><a class="header" href="index.html">marek maskarinec</a> | <a class="header" href="colors.html">color scheme</a> | <a class="header" href="software.html">software i use</a> | <a class="header" href="projects.html">projects</a> | <a class="header" href="etc.html">etc</a></h1>
+		</div>
+		<div class="content">
+<h1>hentai.sh</h1>
+
+<p>Automatically downloads hentai from reddit and shows you using feh. You need to have curl, jq, feh and mpv installed. Run it using bash.</p>
+
+<p><a href="https://marekmaskarinec.github.io/files/hentai.sh">Download link</a></p>
+
+<p>Raw code:</p>
+
+<pre><code>#!/bin/bash
+JSON=~/.cache/hentai.json
+if [ -f $JSON ]; then if test `find $JSON -mmin +60`; then curl -s -A &quot;hentai.sh v0.1 - linux&quot; &quot;https://www.reddit.com/r/hentai.json?limit=100&quot; | sed 's/\\n/ /g' &gt; $JSON; fi   
+else curl -s -A &quot;hentai.sh v0.1 - linux&quot; &quot;https://www.reddit.com/r/hentai.json?limit=100&quot; | sed 's/\\n/ /g' &gt; $JSON; fi
+R=&quot;$(($RANDOM % $(cat $JSON | jq '.data.children | length')+1))&quot;
+URL=$(cat $JSON | jq &quot;.data.children[$R].data.url&quot; | sed 's/\&quot;//g')
+echo $URL
+cat $JSON | jq &quot;.data.children[$R].data.title&quot; --raw-output
+if [[ &quot;$URL&quot; == *&quot;.gif&quot;* ]]; then mpv --loop $URL; exit 0; fi 
+curl -sA &quot;hentai.sh v0.1&quot; $URL | feh -F -
+</code></pre>
+
+		</div>
+	</body>
+</html>
+
